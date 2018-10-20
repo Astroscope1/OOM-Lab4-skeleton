@@ -59,6 +59,7 @@ public class TimeZoneTranslatorTest {
 		DateTime todayInString = new DateTime("2018-10-20 13:15");
 		
 		String test ="2018-10-20 13:15";
+
 		
 		assertEquals(test, todayInINTs.toString());
 		assertEquals(test, todayInString.toString());
