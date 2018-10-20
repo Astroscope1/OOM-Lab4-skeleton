@@ -52,5 +52,16 @@ public class TimeZoneTranslatorTest {
 		assertEquals(startTimeUSE, party.getStartDate().toString());
 		assertEquals(endTimeUSE, party.getEndDate().toString());
 	}
+	
+	@Test
+	public void testDateTime() {
+		DateTime todayInINTs = new DateTime(2018, 10, 20, 13, 15, 00);
+		DateTime todayInString = new DateTime("2018-10-20 13:15:00");
+		
+		String test ="2018-10-20 13:15:00";
+		
+		assertEquals(test, todayInINTs.toString());
+		assertEquals(test, todayInString.toString());
+	}
 
 }
